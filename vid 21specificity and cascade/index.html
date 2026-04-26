@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        h1.cpurple{
+            color: purple;
+        } /* cwh 14 min */
+        [data-x=a]{
+            color: blue; 
+        } /* attribute selectro */
+        /* h1{
+            color: red !important;
+        } /* this !important can also overpower inline style */
+    </style>
+</head>
+<body>
+    <p>specificity - inline style > id slector > class or attribute selector > element selectro > universla selector</p>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">Hi i am deep</h1>
+    </div>
+</body>
+</html>

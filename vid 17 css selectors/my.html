@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors</title>
+    <style>
+        .red{
+            color: aquamarine;
+            background-color: black;
+        }
+        #green{
+            color: blue;
+            background-color: rgb(49, 49, 49);
+        }
+        /* child selector */
+        div > p {
+            background-color: rgb(50, 36, 36);
+            color: aqua;
+        }
+        /* descendent selector */
+        div p{
+            background-color: bisque;
+            color: black;
+        }
+        /* universal selector */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        /* pseudo selector */
+        a :visited {
+            color: yellow;
+        }
+        a :hover{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">i am a div</div>
+    <div id="green">i am second div</div>
+    <div>
+        <p>hi this is a para</p>
+    </div>
+    <div>
+        <article>
+            <div>this is a descendent selector</div>
+        </article>
+    </div>
+    <div>
+        <a href="https://www.google.com"> go to google</a>
+        <br>
+        <a href="https://in.pinterest.com/deepksc2203/draw/">Pintrest</a>
+    </div>
+</body>
+</html>
